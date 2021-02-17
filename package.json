@@ -18,10 +18,6 @@
 			{
 				"command": "heyworld.helloWorld",
 				"title": "HeyWorld"
-			},
-			{
-				"command": "heyworld.test",
-				"title": "Ini Tes Command"
 			}
 		]
 	},

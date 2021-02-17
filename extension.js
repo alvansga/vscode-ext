@@ -21,7 +21,16 @@ function activate(context) {
 		// The code you place here will be executed every time your command is executed
 
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Hey World! by @zralvansga');
+		// vscode.window.showInformationMessage('Hey World! by @zralvansga');
+		// vscode.window.showWarningMessage('Hey World! by @zralvansga');
+		const test = vscode.window.createWebviewPanel(
+			'test',
+			'Ini webview test',
+			vscode.ViewColumn.Two,
+			{}
+		  );
+		//   test.webview.html = getWebviewContent();
+		
 	});
 
 	
