@@ -18,6 +18,10 @@
 			{
 				"command": "heyworld.helloWorld",
 				"title": "HeyWorld"
+			},
+			{
+				"command": "heyworld.start",
+				"title": "HeyWorld start"
 			}
 		]
 	},

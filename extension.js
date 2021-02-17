@@ -32,9 +32,25 @@ function activate(context) {
 		//   test.webview.html = getWebviewContent();
 		
 	});
+	let disposable2 = vscode.commands.registerCommand('heyworld.start', function () {
+		// The code you place here will be executed every time your command is executed
 
-	
+		// Display a message box to the user
+		// vscode.window.showInformationMessage('Hey World! by @zralvansga');
+		// vscode.window.showWarningMessage('Hey World! by @zralvansga');
+		const start = vscode.window.createWebviewPanel(
+			'start',
+			'Ini webview start',
+			vscode.ViewColumn.Active,
+			{}
+		  );
+		//   test.webview.html = getWebviewContent();
+		
+	});
 	context.subscriptions.push(disposable);
+	context.subscriptions.push(disposable2);
+	
+		
 }
 
 // this method is called when your extension is deactivated
